@@ -61,7 +61,24 @@ pTar.width = pTar.Document.body.scrollWidth;
           <dt><a href="http://lib.ustc.edu.cn/" target="new">图书馆</a></dt>
       	</dl>
       	访问量：
-	  	<IMG SRC="/cgi-bin/Count.cgi?df=yebada.dat&ft=0&pad=N&dd=cdr&md=7">
+	  	<?php
+        if(file_exists("count.txt")){
+          $f = fopen("count.txt","r");
+          $i = fread($f,1000);
+          echo " $i ";
+          fclose($f);
+          $f = fopen("count.txt","w");
+          $i++;
+          fwrite($f,$i);
+          fclose($f);
+          
+        }else{
+          $f = fopen("count.txt","w");
+          fwrite($f,0);
+          fclose($f);
+          echo " 0 ";
+        }
+     ?>
     </div>
     
     <iframe id="mainframe" name="mainframe"  src="home.php" onload="javascript:dyniframesize(this)" >
