@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -10,7 +10,7 @@
   <p class="pos_right">
       My name is Bada Ye(叶八达 in Chinese).Now I'm a junior undergraduate of <a href="http://www.ustc.edu.cn" target="new">University of Science and Technology of China(aka USTC)</a> and major in <a href="http://cstu.ustc.edu.cn" target="new">Computer Science and Technology</a> .   
   </p>
-  <h3>Coures 2014spring</h3>
+  <h3>Courses 2014spring</h3>
   <dl>
     <dt><a href="http://staff.ustc.edu.cn/~llyue/database.html"  target="new">数据库系统及应用</a></dt>
     <dd>3C122 1(1,2) 5(1,2)</dd>
