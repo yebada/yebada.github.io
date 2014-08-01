@@ -6,6 +6,25 @@
 <title>主页</title>
 </head>
 <body>
+      	访问量：
+	  	<?php
+        if(file_exists("count.txt")){
+          $f = fopen("count.txt","r");
+          $i = fread($f,1000);
+          echo " $i ";
+          fclose($f);
+          $f = fopen("count.txt","w");
+          $i++;
+          fwrite($f,$i);
+          fclose($f);
+          
+        }else{
+          $f = fopen("count.txt","w");
+          fwrite($f,0);
+          fclose($f);
+          echo " 0 ";
+        }
+     ?>
   <h3>About Me</h3>
   <p class="pos_right">
       My name is Bada Ye(叶八达 in Chinese).Now I'm a junior undergraduate of <a href="http://www.ustc.edu.cn" target="new">University of Science and Technology of China(aka USTC)</a> and major in <a href="http://cstu.ustc.edu.cn" target="new">Computer Science and Technology</a> .   
